@@ -7,7 +7,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&mt { tapping-term-ms = <150>; };
+&mt {
+    tapping-term-ms = <150>;
+    flavor = "balanced";
+};
 
 &lt {
     tapping-term-ms = <150>;
