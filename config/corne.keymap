@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
@@ -73,9 +74,9 @@
 
         umlaute {
             bindings = <
-&trans  &trans     &trans     &kp RA(E)  &trans  &trans    &trans  &kp RA(U)  &trans  &kp RA(O)  &trans  &trans
-&trans  &kp RA(A)  &kp RA(S)  &trans     &trans  &trans    &trans  &trans     &trans  &trans     &trans  &trans
-&trans  &trans     &trans     &trans     &trans  &trans    &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans     &trans     &kp RA(E)  &trans  &trans    &trans  &kp RA(U)  &trans  &kp RA(O)  &trans  &bt BT_CLR
+&trans  &kp RA(A)  &kp RA(S)  &trans     &trans  &trans    &trans  &trans     &trans  &trans     &trans  &bt BT_PRV
+&trans  &trans     &trans     &trans     &trans  &trans    &trans  &trans     &trans  &trans     &trans  &bt BT_NXT
                               &trans     &trans  &trans    &trans  &trans     &trans
             >;
         };
